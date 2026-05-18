@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Hub | Earn • Gaming • Music</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">⚡ Digital Hub</div>
+
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('earn')">Earn</button>
+      <button onclick="showSection('gaming')">Gaming</button>
+      <button onclick="showSection('music')">Music</button>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- HOME -->
+    <section id="home" class="active">
+      <div class="hero">
+        <h1>Learn. Play. Earn. 🚀</h1>
+        <p>Your modern hub for online income, gaming tips, and music trends.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card" onclick="showSection('earn')">
+          <h3>💰 Earn Online</h3>
+          <p>Legit ways to make money online step-by-step.</p>
+        </div>
+
+        <div class="card" onclick="showSection('gaming')">
+          <h3>🎮 Gaming</h3>
+          <p>Tips, guides, and competitive strategies.</p>
+        </div>
+
+        <div class="card" onclick="showSection('music')">
+          <h3>🎵 Music</h3>
+          <p>Trending sounds and artist discoveries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EARN -->
+    <section id="earn">
+      <h2>💰 Earn Online Articles</h2>
+      <div id="earnPosts" class="posts"></div>
+    </section>
+
+    <!-- GAMING -->
+    <section id="gaming">
+      <h2>🎮 Gaming Guides</h2>
+      <div id="gamingPosts" class="posts"></div>
+    </section>
+
+    <!-- MUSIC -->
+    <section id="music">
+      <h2>🎵 Music Trends</h2>
+      <div id="musicPosts" class="posts"></div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Digital Hub • Built by You 🔥</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
